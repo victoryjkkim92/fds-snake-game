@@ -108,8 +108,8 @@ export default class SnakeGame {
   template() {
     return <div className={`game ${this.gameState === 'end' ? 'end' : ''}`}>
       <div className="table">
-        {this.table.map(cols => <div className="table__row">
-          {cols.map(cell => <div className={`table__cell ${cell === 'joint' ? 'joint' : cell === 'fruit' ? 'fruit' : ''}`}></div>)}
+        {this.table.map((cols, colIndex) => <div className="table__row" key={colIndex}>
+          {cols.map((cell, cellIndex) => <div key={cellIndex} className={`table__cell ${cell === 'joint' ? 'joint' : cell === 'fruit' ? 'fruit' : ''}`}></div>)}
         </div>)}
       </div>
       <div className="description">
