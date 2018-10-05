@@ -3,6 +3,7 @@
 이 프로젝트는 [뱀 게임](https://en.wikipedia.org/wiki/Snake_%28video_game_genre%29)의 로직을 쉽게 구현해볼 수 있도록, 기반 코드를 미리 작성해 놓은 템플릿 프로젝트입니다.
 
 - 필요한 도구를 설치한 후 프로젝트를 실행시키세요.
+- 게임 상에서 화살표 키를 누르며 개발자 도구 콘솔의 출력 결과를 관찰해보세요.
 - `src` 폴더 아래에 [SnakeGameLogic.js](./src/SnakeGameLogic.js) 파일을 편집하며 변화를 관찰해보세요.
 - 뱀 게임이 제대로 동작할 수 있도록 SnakeGameLogic 생성자의 내부를 채워보세요.
 - [config.js](./src/config.js) 설정 파일을 편집해보세요.
