@@ -1,5 +1,8 @@
 import {ROWS, COLS} from './config';
 
+// NOTE: ROWS, COLS에는 행의 개수, 열의 개수가 저장되어 있습니다.
+// 이 변수를 활용해서 코드를 작성하세요!
+
 function SnakeGameLogic() {
   // 각 마디의 좌표를 저장하는 배열
   this.joints = [
