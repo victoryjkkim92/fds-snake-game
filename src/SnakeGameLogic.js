@@ -5,6 +5,7 @@ import {ROWS, COLS} from './config';
 
 function SnakeGameLogic() {
   // 각 마디의 좌표를 저장하는 배열
+  // 배열 앞쪽이 머리, 뒤쪽이 꼬리
   this.joints = [
     {x: 5, y: 0},
     {x: 4, y: 0},
@@ -15,10 +16,13 @@ function SnakeGameLogic() {
 
   // 먹이의 좌표
   this.fruit = {x: 3, y: 5};
+  
+ //  화살표 키를 누르지 않아도 주기적으로 뱀이 움직이도록 만들어보세요. (힌트: 방금 전에 무슨 키를 눌렀더라..?)
+  this.direction = "";
 }
+
+
 //  화살표 키를 눌렀을 때 뱀이 움직이도록 만들어보세요.
-//  화살표 키를 눌렀을 때 뱀이 자연스럽게 움직이도록 만들어보세요. (힌트: 꼬리를 떼서 머리 앞에 갖다붙이면..?)
-this.direction = '';
 
 SnakeGameLogic.prototype.up = function() {
   // 위쪽 화살표 키를 누르면 실행되는 함수
@@ -49,7 +53,7 @@ SnakeGameLogic.prototype.nextState = function() {
   let newHead;
   let newFruit;
 
-  //  화살표 키를 누르지 않아도 주기적으로 뱀이 움직이도록 만들어보세요. (힌트: 방금 전에 무슨 키를 눌렀더라..?)
+//  화살표 키를 눌렀을 때 뱀이 자연스럽게 움직이도록 만들어보세요. (힌트: 꼬리를 떼서 머리 앞에 갖다붙이면..?)
   if (this.direction === 'up'){
     newHead = { 
     x: this.joints[0].x, 
