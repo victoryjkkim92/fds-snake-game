@@ -37,3 +37,6 @@
 
 1. Netlify에 로그인한 후, 메인 페이지의 **New site from Git** 버튼을 눌러 Github 저장소를 연결하세요.
 1. 빌드 설정의 'build command' 필드에는 `npm run build`를, 'publish directory' 필드에는 `dist`를 입력하세요.
+
+
+# 게임완성! **[여기서](https://priceless-roentgen-6c0cb7.netlify.com/)** 게임해보세요
